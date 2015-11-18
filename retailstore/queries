@@ -1,0 +1,16 @@
+Insert or add for departments
+
+INSERT INTO tbldep VALUES ('', store_id, dep_name, dep_description, priority, parent_id)
+
+Update for departments
+
+UPDATE tbldep SET dep_name = [value-3], dep_desc = [value-4], dep_priority = [value-5], parent_id = [value-6] WHERE dep_id = [] LIMIT 1
+
+Delete from departments
+
+DELETE FROM tbldep WHERE dep_id = [] LIMIT 1
+
+then delete all from tbldep where store_id is same as that of deleted one and parent_id = dep_id of deleted. Propagate this further on the children
+
+
+
